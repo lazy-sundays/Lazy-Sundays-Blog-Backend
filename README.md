@@ -1,26 +1,57 @@
-# Lazy-Sundays-Blog
-WIP. A personal blog for games, movies. tv, music, etc.
+# 🚀 Getting started with Strapi
 
-## Project Stucture / Tech Stack
+Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
-### Backend
-* Headless CMS - [Strapi](https://strapi.io/)
-* Database - [MySQL](https://www.mysql.com/)
-* Hosting - [namecheap](https://www.namecheap.com/hosting/shared/)
-* Guides
-  - [Hosting Strapi and MySQL](https://strapi.io/blog/deploying-strapi-my-sql-on-a-traditional-hosting-provider)
-  - [Replacing the Default Rich Text Editor](https://market.strapi.io/plugins/@sklinet-strapi-plugin-tinymce)
+### `develop`
 
-### Frontend
-* Framework - [React](https://react.dev/)
-* CSS Libraries
-  - [Tailwind](https://tailwindcss.com/)
-  - [HeadlessUI](https://headlessui.com/)
-* Hosting - [Vercel](https://vercel.com/)
-* Guides
-  - [Adding a Domain in Vercel](https://vercel.com/docs/concepts/projects/domains/add-a-domain)
-  - [Reader View Compatability](https://videoinu.com/blog/firefox-reader-view-heuristics/?utm_source=pocket_reader)
-  - [namecheap domain on vercel](https://jorgearuv.dev/setting-up-namecheap-domain-in-vercel)
- 
-### Tools
-* [Figma](https://www.figma.com/@lazysundays)
+Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+
+```
+npm run develop
+# or
+yarn develop
+```
+
+### `start`
+
+Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+
+```
+npm run start
+# or
+yarn start
+```
+
+### `build`
+
+Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+
+```
+npm run build
+# or
+yarn build
+```
+
+## ⚙️ Deployment
+
+Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
+
+## 📚 Learn more
+
+- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
+- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
+- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
+- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
+- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+
+Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+
+## ✨ Community
+
+- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
+- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
+- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+
+---
+
+<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
