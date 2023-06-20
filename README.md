@@ -1,8 +1,8 @@
 # Running the Backend
 
-### `Setting Up MySQL`
+### `Setting Up Postgres`
 
-Follow this [guide](https://dev.mysql.com/doc/refman/8.0/en/windows-installation.html) to install a local mysql instance.
+Follow this [link](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) to install a local mysql instance.
 
 During installtion, ensure to create a local user with full permissions.
 
@@ -26,7 +26,7 @@ ADMIN_JWT_SECRET={secret-6}
 TRANSFER_TOKEN_SALT={secret-7}
 
 # Database
-DATABASE_CLIENT=mysql
+DATABASE_CLIENT=postgres
 DATABASE_HOST={database-ip}
 DATABASE_PORT={database-port}
 DATABASE_NAME={database-name}

@@ -14,8 +14,9 @@ module.exports = createCoreController('api::article.article', {
         const rand = await strapi.db.connection
             .select("id")
             .from(strapi.getModel(uid).collectionName)
-            // The random function of the DB. This one is MySQL'.
-            .orderByRaw("RAND()")
+            .whereNot('published_at', null)
+            // The random function of the DB. This one is Postgres.
+            .orderByRaw("random()")
             .limit(1);
         
         return rand[0];
