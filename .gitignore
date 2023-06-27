@@ -115,7 +115,7 @@ build
 .strapi-updater.json
 
 ############################
-# Strapi
+# Documentation
 ############################
 **/documentation/1.0.0/*.json
 src/extensions/documentation/
