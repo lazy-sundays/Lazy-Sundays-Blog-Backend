@@ -2,7 +2,7 @@
 
 ### `Setting Up Postgres`
 
-Follow this [link](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) to install a local mysql instance.
+Follow this [link](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) to install a local postgres instance.
 
 During installtion, ensure to create a local user with full permissions.
 
