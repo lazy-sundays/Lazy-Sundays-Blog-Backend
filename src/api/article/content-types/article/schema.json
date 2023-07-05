@@ -30,10 +30,6 @@
       "required": false,
       "maxLength": 150
     },
-    "body": {
-      "type": "richtext",
-      "required": true
-    },
     "authors": {
       "type": "relation",
       "relation": "manyToMany",
@@ -50,6 +46,14 @@
       "type": "decimal",
       "min": 0,
       "max": 120
+    },
+    "body": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
