@@ -5,7 +5,7 @@ module.exports = {
             info: {
                 version: '1.0.0',
                 title: 'DOCUMENTATION',
-                description: '',
+                description: null,
                 termsOfService: null,
                 contact: null,
                 license: null,
