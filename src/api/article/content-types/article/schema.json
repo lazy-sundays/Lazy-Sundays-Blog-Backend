@@ -47,17 +47,13 @@
       "min": 0,
       "max": 120
     },
-    "body": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "files"
-      ]
-    },
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
