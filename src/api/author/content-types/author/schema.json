@@ -45,6 +45,21 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "mappedBy": "authors"
+    },
+    "pronouns": {
+      "type": "customField",
+      "options": [
+        "he/him",
+        "she/her",
+        "they/them",
+        "it/its",
+        ""
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }

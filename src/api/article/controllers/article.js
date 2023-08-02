@@ -12,7 +12,7 @@ module.exports = createCoreController('api::article.article', {
         const uid = "api::article.article";
 
         const rand = await strapi.db.connection
-            .select("id")
+            .select("slug")
             .from(strapi.getModel(uid).collectionName)
             .whereNot('published_at', null)
             // The random function of the DB. This one is Postgres.

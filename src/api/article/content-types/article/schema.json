@@ -48,12 +48,16 @@
       "max": 120
     },
     "body": {
-      "allowedTypes": [
-        "files"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }

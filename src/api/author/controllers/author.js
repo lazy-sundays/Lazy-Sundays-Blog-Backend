@@ -11,7 +11,11 @@ module.exports = createCoreController('api::author.author', {
 
         const [entries, count] = await strapi.db.query('api::article.article').findWithCount({
             where: { 
-                authors: {id:ctx.params.id},
+                authors: {
+                    slug:{
+                        $eqi: ctx.params.slug,
+                    },
+                },
                 $not: {
                     published_at: null
                 },
