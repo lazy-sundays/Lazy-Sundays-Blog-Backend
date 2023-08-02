@@ -23,7 +23,7 @@ const customRouter = (innerRouter, extraRoutes = []) => {
 const myExtraRoutes = [
     { // Path defined with a URL parameter
         method: 'GET',
-        path: '/authors/:id/articles/count',
+        path: '/authors/:slug/articles/count',
         handler: 'author.countArticles',
         config: {
             auth: false,

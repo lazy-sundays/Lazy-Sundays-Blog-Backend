@@ -23,8 +23,8 @@ module.exports = {
                                 "schema": {
                                     "type": "object",
                                     "properties": {
-                                        "id": {
-                                            "type": "integer",
+                                        "slug": {
+                                            "type": "string",
                                             "example": "1"
                                         }
                                     }
@@ -33,7 +33,7 @@ module.exports = {
                         }
                     };
                     generatedDocumentationDraft.paths[
-                        "/authors/{id}/articles/count"
+                        "/authors/{slug}/articles/count"
                     ].get.responses["200"]={
                         "description": "OK. Returns the number of articles written by a specific author",
                         "content": {
