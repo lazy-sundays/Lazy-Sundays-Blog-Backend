@@ -49,10 +49,10 @@
     "pronouns": {
       "type": "customField",
       "options": [
-        "he/him",
-        "she/her",
-        "they/them",
-        "it/its",
+        "he/him/his",
+        "she/her/hers",
+        "they/them/theirs",
+        "it/it/its",
         ""
       ],
       "customField": "plugin::multi-select.multi-select"
