@@ -53,6 +53,7 @@
         "she/her/hers",
         "they/them/theirs",
         "it/it/its",
+        "any pronouns",
         ""
       ],
       "customField": "plugin::multi-select.multi-select"
