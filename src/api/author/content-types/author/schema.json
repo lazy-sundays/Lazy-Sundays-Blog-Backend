@@ -12,14 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "avatar": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "name": {
       "type": "string",
       "required": true,
@@ -61,6 +53,9 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "avatar": {
+      "type": "string"
     }
   }
 }
