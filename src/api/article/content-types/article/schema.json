@@ -17,14 +17,6 @@
       "unique": true,
       "required": true
     },
-    "hero": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "tagline": {
       "type": "text",
       "required": false,
@@ -54,6 +46,9 @@
     "body": {
       "type": "richtext",
       "required": true
+    },
+    "hero": {
+      "type": "string"
     }
   }
 }
