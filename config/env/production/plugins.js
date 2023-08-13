@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
     // ...
     documentation: {
-        enabled: true,
+        enabled: false,
         config: {
             info: {
                 version: '1.0.0',
