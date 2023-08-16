@@ -7,7 +7,7 @@ async function updateReadTime(event){
   
     const entry = await strapi.entityService.update('api::article.article', result.id, {
       data: {
-        readTime: readTimeEstimate(result.body).duration.toFixed(2)
+        readTime: readTimeEstimate(string=result.body, customWordTime=190).duration.toFixed(2)
       },
     });
 }
