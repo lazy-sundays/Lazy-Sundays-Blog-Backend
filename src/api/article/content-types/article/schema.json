@@ -50,6 +50,9 @@
     },
     "hero": {
       "type": "string"
+    },
+    "heroAltText": {
+      "type": "text"
     }
   }
 }
