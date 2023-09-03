@@ -2,7 +2,7 @@
   "name": "lazy-sundays-blog",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Backend for a personal blog for games, movies. tv, music, etc.",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -21,8 +21,12 @@
     "strapi-plugin-multi-select": "^1.2.2"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Jenny Leidig"
   },
+  "contributors": [
+    {"name": "Jenny Leidig"},
+    {"name": "Devin Toms "}
+  ],
   "strapi": {
     "uuid": "3cefdc56-2510-4b5e-a48f-bba49db3b2d4"
   },
