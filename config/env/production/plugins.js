@@ -1,15 +1,17 @@
-module.exports = ({ env }) => ({
-    // ...
+module.exports = {
     documentation: {
-        enabled: false,
+        enabled: true,
         config: {
             info: {
-                version: '1.0.0',
-                title: 'DOCUMENTATION',
-                description: null,
+                version: '0.1.0',
+                title: 'The Lazy Sundays Blog - API',
+                description: "API documentation for the The Lazy Sundays Blog, a personal blog for games, movies. tv, music, etc.",
                 termsOfService: null,
-                contact: null,
-                license: null,
+                contact: {
+                    name: "Lazy Sundays Staff",
+                    email: "contact@alazysunday.com",
+                    url: "https://alazysunday.com"
+                },
             },
             "x-strapi-config": {
                 // Do not generate for plugins
@@ -54,12 +56,11 @@ module.exports = ({ env }) => ({
                         
                 },
             },
-            security: [ { bearerAuth: [] } ],
-            servers: [{ url: 'http://localhost:1337/api', description: 'Development server' }],
+            servers: [{ url: 'https://upyfvmq4cb24b0fu8735.cleavr.app/api', description: 'Production server' }],
             externalDocs: {
                 description: 'Find out more',
                 url: 'https://docs.strapi.io/developer-docs/latest/getting-started/introduction.html'
             },
         },
     },
-  });
+};
