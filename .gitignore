@@ -118,6 +118,5 @@ build
 ############################
 # Documentation
 ############################
-**/documentation/1.0.0/*.json
 **/documentation/**
 src/extensions/documentation/
