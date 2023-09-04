@@ -93,7 +93,9 @@ DATABASE_PASSWORD={database-user-password}
 
 After setting up the database and evironment, run the following command to install the necessary node modules:
 
-&emsp;`npm install`
+```
+npm install
+```
 
 Afterwards, run strapi in one of the following configurations:
 
@@ -130,7 +132,7 @@ npm run build --production
 Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
 
 ```
-npm run start
+ENV_PATH=./.env.production NODE_ENV=production npm run start
 ```
 
 

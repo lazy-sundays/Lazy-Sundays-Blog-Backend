@@ -14,7 +14,7 @@
   "attributes": {
     "aboutUs": {
       "type": "text",
-      "maxLength": 500,
+      "maxLength": 1000,
       "required": true
     }
   }
