@@ -104,7 +104,6 @@ Afterwards, run strapi in one of the following configurations:
 #### `build`
 
 Build the admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
-
 ```
 npm run build
 ```
