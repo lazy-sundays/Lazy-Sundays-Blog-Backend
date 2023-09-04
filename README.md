@@ -116,7 +116,6 @@ Start your the application with autoReload enabled. [Learn more](https://docs.st
 npm run develop
 ```
 
-
 ### `Production Configuration`
 #### `build`
 
