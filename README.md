@@ -39,6 +39,7 @@ API_TOKEN_SALT={secret-5}
 ADMIN_JWT_SECRET={secret-6}
 TRANSFER_TOKEN_SALT={secret-7}
 JWT_SECRET={secret-8}
+STRAPI_WEBHOOK_SECRET={secret-9}
 
 # Database
 DATABASE_CLIENT=postgres
@@ -78,6 +79,7 @@ API_TOKEN_SALT={secret-5}
 ADMIN_JWT_SECRET={secret-6}
 TRANSFER_TOKEN_SALT={secret-7}
 JWT_SECRET={secret-8}
+STRAPI_WEBHOOK_SECRET={secret-9}
 
 DATABASE_CLIENT=postgres
 DATABASE_HOST={database-ip}
