@@ -6,5 +6,8 @@ module.exports = ({ env }) => ({
   },
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
+    defaultHeaders: {
+      Authorization: `Bearer ${process.env.STRAPI_WEBHOOK_SECRET}`,
+    },
   },
 });
