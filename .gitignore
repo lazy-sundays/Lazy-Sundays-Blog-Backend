@@ -120,3 +120,6 @@ build
 ############################
 **/documentation/**
 src/extensions/documentation/
+
+# site
+site/
