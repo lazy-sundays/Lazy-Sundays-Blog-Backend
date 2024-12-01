@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+# the lazy sunday blog - Backend
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This serves as the documentation for the backend service of "the lazy sunday blog".
 
-## Commands
+## Getting Started
+* [link](start.md)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Useful Links
+* [Code Repo](https://github.com/lazy-sundays/Lazy-Sundays-Blog-Backend)
+* [Live Production Instance Portal](https://admin.alazysunday.com)
+* [API Docs](api.md)
 
-## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.

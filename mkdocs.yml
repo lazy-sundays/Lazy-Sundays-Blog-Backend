@@ -1,4 +1,10 @@
-site_name: My Docs
+site_name: Lazy-Sundays-Blog-Backend
 site_url: https://lazy-sundays.github.io/Lazy-Sundays-Blog-Backend/
 theme:
   name: material
+nav:
+  - Home: index.md
+  - Development:
+    - Getting Started: start.md
+    - API Docs: api.md
+  - About: about.md
