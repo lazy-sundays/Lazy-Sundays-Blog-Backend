@@ -24,8 +24,12 @@
     "name": "Jenny Leidig"
   },
   "contributors": [
-    {"name": "Jenny Leidig"},
-    {"name": "Devin Toms "}
+    {
+      "name": "Jenny Leidig"
+    },
+    {
+      "name": "Devin Toms "
+    }
   ],
   "strapi": {
     "uuid": "3cefdc56-2510-4b5e-a48f-bba49db3b2d4"
