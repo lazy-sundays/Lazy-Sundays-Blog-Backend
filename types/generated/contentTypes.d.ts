@@ -753,6 +753,10 @@ export interface ApiArticleArticle extends Schema.CollectionType {
     body: Attribute.RichText & Attribute.Required;
     hero: Attribute.String;
     heroAltText: Attribute.Text;
+    heroAttribution: Attribute.String &
+      Attribute.SetMinMaxLength<{
+        maxLength: 50;
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

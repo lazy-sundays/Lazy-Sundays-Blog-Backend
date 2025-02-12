@@ -54,6 +54,10 @@
     },
     "heroAltText": {
       "type": "text"
+    },
+    "heroAttribution": {
+      "type": "string",
+      "maxLength": 50
     }
   }
 }
