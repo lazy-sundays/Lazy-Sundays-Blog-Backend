@@ -1,28 +1,25 @@
-'use strict';
+"use strict";
 
 /**
  * author controller
  */
 
-const { createCoreController } = require('@strapi/strapi').factories;
+const { createCoreController } = require("@strapi/strapi").factories;
 
-module.exports = createCoreController('api::author.author', {
-    async countArticles(ctx){
-
-        const [entries, count] = await strapi.db.query('api::article.article').findWithCount({
-            where: { 
-                authors: {
-                    slug:{
-                        $eqi: ctx.params.slug,
-                    },
-                },
-                $not: {
-                    published_at: null
-                },
-            },
-            populate: { authors: true },
-        });
-        return {"count": count};
-
-    }
+module.exports = createCoreController("api::author.author", {
+  async countArticles(ctx) {
+    const count = await strapi.entityService.count("api::article.article", {
+      filters: {
+        authors: {
+          slug: {
+            $eqi: ctx.params.slug,
+          },
+        },
+        publishedAt: {
+          $notNull: true,
+        },
+      },
+    });
+    return { count: count };
+  },
 });
