@@ -8,7 +8,7 @@ RUN npm install -g node-gyp
 # Set environment variables
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
-ENV NODE_OPTIONS="--max-old-space-size=4096"
+ENV STRAPI_TELEMETRY_DISABLED=true
 
 WORKDIR /opt/
 COPY package.json ./
