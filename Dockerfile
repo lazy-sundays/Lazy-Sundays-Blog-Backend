@@ -36,4 +36,5 @@ EXPOSE 1337
 
 # Use the entrypoint script
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+
 CMD ["npm", "run", "start"]
