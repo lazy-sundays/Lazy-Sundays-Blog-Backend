@@ -1,32 +1,29 @@
-'use strict';
+"use strict";
 
-const { default: readTimeEstimate } = require('read-time-estimate');
-
-async function updateReadTime(event){
-  const { result, params } = event; 
-  
-    const uid = "api::article.article";
-    const readTime = readTimeEstimate(result.body, 190, 12, 500, ['img', 'Image']).duration.toFixed(2)
-
-    //update via knex so that the update lifecycle function isnt triggered repeatedly (forever)
-    const rand = await strapi.db.connection
-        .table(strapi.getModel(uid).collectionName)
-        .update({
-          read_time: readTime
-        })
-        .where('id', result.id)
-}
+const { default: readTimeEstimate } = require("read-time-estimate");
 
 module.exports = {
-  
-    afterCreate(event) {
+  beforeCreate(event) {
+    const { data } = event.params;
+    if (data.body) {
+      const readTime = readTimeEstimate(data.body, 190, 12, 500, [
+        "img",
+        "Image",
+      ]).duration.toFixed(2);
+      data.readTime = readTime;
+    }
+  },
 
-      updateReadTime(event);
+  beforeUpdate(event) {
+    const { data } = event.params;
+    if (data.body) {
+      const readTime = readTimeEstimate(data.body, 190, 12, 500, [
+        "img",
+        "Image",
+      ]).duration.toFixed(2);
 
-    },
-
-    afterUpdate(event) {
-      
-      updateReadTime(event);
-    },
+      console.log(readTime);
+      data.readTime = readTime;
+    }
+  },
 };
