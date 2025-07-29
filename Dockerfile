@@ -30,9 +30,5 @@ RUN npm run build
 
 EXPOSE 1337
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD curl -f http://localhost:1337/_health || exit 1
-
 # Start the application in production mode
 CMD ["npm", "run", "start"]
