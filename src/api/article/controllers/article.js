@@ -11,9 +11,10 @@ module.exports = createCoreController("api::article.article", {
   async randomArticle(ctx) {
     const uid = "api::article.article";
 
+    // Use the service to find published articles
     const allArticles = await strapi.entityService.findMany(uid, {
-      filters: { publishedAt: { $notNull: true } },
-      fields: ["slug"],
+      publicationState: "live", // This ensures we only get published articles
+      fields: ["documentId", "slug"],
     });
 
     if (allArticles.length === 0) {
@@ -22,6 +23,9 @@ module.exports = createCoreController("api::article.article", {
 
     const randomIndex = Math.floor(Math.random() * allArticles.length);
 
-    return allArticles[randomIndex];
+    // Return the full article data, not just the slug
+    const randomArticle = allArticles[randomIndex];
+
+    return randomArticle;
   },
 });
