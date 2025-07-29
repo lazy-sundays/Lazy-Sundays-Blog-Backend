@@ -28,7 +28,13 @@ RUN mkdir -p public/uploads
 # Build the application for production
 RUN npm run build
 
+# Copy and set up the entrypoint script
+COPY docker-entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
 EXPOSE 1337
 
-# Start the application in production mode
+# Use the entrypoint script
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+
 CMD ["npm", "run", "start"]
