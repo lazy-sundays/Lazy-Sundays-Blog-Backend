@@ -8,7 +8,7 @@ RUN npm install -g node-gyp
 # Set environment variables
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
-ENV NODE_OPTIONS="--max-old-space-size=4096"
+ENV STRAPI_TELEMETRY_DISABLED=true
 
 WORKDIR /opt/
 COPY package.json ./
@@ -29,10 +29,6 @@ RUN mkdir -p public/uploads
 RUN npm run build
 
 EXPOSE 1337
-
-# Health check
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-  CMD curl -f http://localhost:1337/_health || exit 1
 
 # Start the application in production mode
 CMD ["npm", "run", "start"]
