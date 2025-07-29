@@ -1,7 +1,7 @@
 FROM node:22-alpine
 
-# Installing libvips-dev for sharp Compatibility
-RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev nasm bash vips-dev git curl
+# Installing libvips-dev for sharp Compatibility and netcat for database checks
+RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev nasm bash vips-dev git curl netcat-openbsd
 RUN npm install -g npm@11.5.1
 RUN npm install -g node-gyp
 
