@@ -35,10 +35,10 @@
     "strapi-plugin-multi-select": "^2.1.1",
     "styled-components": "^6.1.19"
   },
+  "devDependencies": {
+    "esbuild": "^0.20.2"
+  },
   "strapi": {
     "uuid": "3cefdc56-2510-4b5e-a48f-bba49db3b2d4"
-  },
-  "devDependencies": {
-    "esbuild": "^0.19.2"
   }
 }
