@@ -7,8 +7,10 @@ During installation, ensure to create a local user with full permissions to your
 After installation, create a database, making sure to keep it empty.
 
 > Ubuntu Install Notes:
->> * [Creating a User and Database](https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e)  
->> * [Ensuring User has correct permissions](https://stackoverflow.com/a/74111630)
+>
+> > - [Creating a User and Database](https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e)
+> > - [Ensuring User has correct permissions](https://stackoverflow.com/a/74111630)
+
 ---
 
 ### `Setting Up The Environment`
@@ -18,7 +20,6 @@ To ensure strapi functions correctly, you will need to set up the environment fo
 See this [guide](https://docs.strapi.io/dev-docs/migration/v4/migration-guide-4.0.6-to-4.1.8#setting-secrets-for-non-development-environments) for further details.
 
 #### `Local Development`
-
 
 To do so, create a file in the root directory of the strapi project called `.env` with the following options.
 
@@ -33,6 +34,7 @@ TRANSFER_TOKEN_SALT={secret-7}
 JWT_SECRET={secret-8}
 STRAPI_WEBHOOK_SECRET={secret-9}
 WEBHOOKS_POPULATE_RELATIONS=true
+STRAPI_TELEMETRY_DISABLED=true
 
 # Database
 DATABASE_CLIENT=postgres
@@ -58,6 +60,7 @@ DATABASE_USERNAME={database-user-username}
 DATABASE_PASSWORD={database-user-password}
 DATABASE_SSL={boolean}
 ```
+
 #### `Production Development`
 
 To generate the infromation, follow the same steps as above.
@@ -73,6 +76,7 @@ ADMIN_JWT_SECRET={secret-6}
 TRANSFER_TOKEN_SALT={secret-7}
 JWT_SECRET={secret-8}
 STRAPI_WEBHOOK_SECRET={secret-9}
+STRAPI_TELEMETRY_DISABLED=true
 
 DATABASE_CLIENT=postgres
 DATABASE_HOST={database-ip}
@@ -99,6 +103,7 @@ Afterwards, run strapi in one of the following configurations:
 #### `build`
 
 Build the admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+
 ```
 npm run build
 ```
@@ -112,6 +117,7 @@ npm run develop
 ```
 
 ### `Production Configuration`
+
 #### `build`
 
 Build the admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
