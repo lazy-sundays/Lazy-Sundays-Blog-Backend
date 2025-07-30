@@ -20,9 +20,9 @@ module.exports = createCoreController("api::author.author", {
       return { count: 0 };
     }
 
-    // Use the entityService to count published articles
-    const count = await strapi.entityService.count("api::article.article", {
-      publicationState: "live",
+    // Use the new document service to count published articles
+    const count = await strapi.documents("api::article.article").count({
+      status: "published",
       filters: {
         authors: {
           id: {
